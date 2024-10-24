@@ -1,0 +1,371 @@
+{
+    "extension": "linecounter",
+    "version": "0.2.7",
+    "workspace": "/home/karthik/Projects/Grievance-Portal/client",
+    "linecount": [
+        {
+            "version": "0.2.7",
+            "counttime": "2024-10-24 10:06:11",
+            "filesum": 50,
+            "codesum": 6292,
+            "commentsum": 46,
+            "blanksum": 238,
+            "statistics": {
+                ".ts": {
+                    "code": 93,
+                    "comment": 2,
+                    "blank": 9
+                },
+                ".json": {
+                    "code": 4244,
+                    "comment": 2,
+                    "blank": 47
+                },
+                "": {
+                    "code": 19,
+                    "comment": 9,
+                    "blank": 2
+                },
+                ".cjs": {
+                    "code": 14,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".md": {
+                    "code": 10,
+                    "comment": 0,
+                    "blank": 1
+                },
+                ".html": {
+                    "code": 14,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".js": {
+                    "code": 16,
+                    "comment": 1,
+                    "blank": 0
+                },
+                ".tsx": {
+                    "code": 1569,
+                    "comment": 31,
+                    "blank": 176
+                },
+                ".svg": {
+                    "code": 302,
+                    "comment": 1,
+                    "blank": 1
+                },
+                ".css": {
+                    "code": 11,
+                    "comment": 0,
+                    "blank": 2
+                }
+            },
+            "filelist": [
+                {
+                    "blank": 0,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": ".eslintrc.cjs"
+                },
+                {
+                    "blank": 2,
+                    "code": 18,
+                    "comment": 9,
+                    "filename": ".gitignore"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".nojekyll"
+                },
+                {
+                    "blank": 0,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "index.html"
+                },
+                {
+                    "blank": 45,
+                    "code": 4165,
+                    "comment": 0,
+                    "filename": "package-lock.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 40,
+                    "comment": 0,
+                    "filename": "package.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "postcss.config.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "public/CNAME"
+                },
+                {
+                    "blank": 1,
+                    "code": 295,
+                    "comment": 1,
+                    "filename": "public/logo.svg"
+                },
+                {
+                    "blank": 5,
+                    "code": 57,
+                    "comment": 0,
+                    "filename": "src/App.tsx"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src/assets/close.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "src/assets/dropdown.svg"
+                },
+                {
+                    "filename": "src/assets/error404.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 2,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "src/assets/index.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src/assets/menu.svg"
+                },
+                {
+                    "filename": "src/assets/user.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 9,
+                    "code": 46,
+                    "comment": 0,
+                    "filename": "src/components/AdminNavbar.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src/components/index.ts"
+                },
+                {
+                    "blank": 4,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "src/components/LoadingSpinner.tsx"
+                },
+                {
+                    "blank": 11,
+                    "code": 61,
+                    "comment": 0,
+                    "filename": "src/components/Navbar.tsx"
+                },
+                {
+                    "blank": 5,
+                    "code": 30,
+                    "comment": 1,
+                    "filename": "src/components/TagsAutocomplete.tsx"
+                },
+                {
+                    "blank": 5,
+                    "code": 31,
+                    "comment": 0,
+                    "filename": "src/components/UserIcon.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "src/constants/index.ts"
+                },
+                {
+                    "blank": 7,
+                    "code": 44,
+                    "comment": 0,
+                    "filename": "src/context.tsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "src/index.css"
+                },
+                {
+                    "blank": 1,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "src/main.tsx"
+                },
+                {
+                    "blank": 6,
+                    "code": 49,
+                    "comment": 0,
+                    "filename": "src/MainSite.tsx"
+                },
+                {
+                    "blank": 11,
+                    "code": 91,
+                    "comment": 9,
+                    "filename": "src/pages/AddFaculty.tsx"
+                },
+                {
+                    "blank": 10,
+                    "code": 88,
+                    "comment": 3,
+                    "filename": "src/pages/AnonymousComplaint.tsx"
+                },
+                {
+                    "blank": 10,
+                    "code": 100,
+                    "comment": 2,
+                    "filename": "src/pages/ChangePassword.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "src/pages/FirstLoad.tsx"
+                },
+                {
+                    "blank": 13,
+                    "code": 145,
+                    "comment": 4,
+                    "filename": "src/pages/ForgetPassword.tsx"
+                },
+                {
+                    "blank": 15,
+                    "code": 199,
+                    "comment": 0,
+                    "filename": "src/pages/Grievances.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 30,
+                    "comment": 0,
+                    "filename": "src/pages/index.ts"
+                },
+                {
+                    "blank": 12,
+                    "code": 114,
+                    "comment": 4,
+                    "filename": "src/pages/Login.tsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "src/pages/NonExistant.tsx"
+                },
+                {
+                    "blank": 8,
+                    "code": 98,
+                    "comment": 1,
+                    "filename": "src/pages/OngoingGrievances.tsx"
+                },
+                {
+                    "blank": 8,
+                    "code": 77,
+                    "comment": 0,
+                    "filename": "src/pages/Profile.tsx"
+                },
+                {
+                    "blank": 10,
+                    "code": 146,
+                    "comment": 2,
+                    "filename": "src/pages/Register.tsx"
+                },
+                {
+                    "blank": 10,
+                    "code": 70,
+                    "comment": 2,
+                    "filename": "src/pages/RemoveUsers.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src/pages/ServerError.tsx"
+                },
+                {
+                    "blank": 8,
+                    "code": 73,
+                    "comment": 3,
+                    "filename": "src/pages/SubmitGrievance.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 24,
+                    "comment": 0,
+                    "filename": "src/utils/getAccessToken.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 1,
+                    "filename": "src/vite-env.d.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 1,
+                    "filename": "tailwind.config.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "TODO.md"
+                },
+                {
+                    "blank": 2,
+                    "code": 21,
+                    "comment": 2,
+                    "filename": "tsconfig.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "tsconfig.node.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "vercel.json"
+                },
+                {
+                    "blank": 1,
+                    "code": 8,
+                    "comment": 1,
+                    "filename": "vite.config.ts"
+                }
+            ]
+        }
+    ]
+}

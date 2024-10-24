@@ -88,9 +88,9 @@ const Register = () => {
       setRepeatPass("");
       return;
     }
-    const emailRegex = /^[a-zA-Z]+\.([a-zA-Z]*)?(20\d{2})?@aim\.ac\.in$/;
+    const emailRegex = /^[a-zA-Z0-9]+@aim+\.ac\.in$/;
     if (!emailRegex.test(email)) {
-      setAlert("Please enter a valid VIT Bhopal email");
+      setAlert("Please enter a valid AIMK email");
       handleReset();
       return;
     }

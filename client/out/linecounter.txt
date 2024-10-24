@@ -1,0 +1,76 @@
+===============================================================================
+EXTENSION NAME : linecounter
+EXTENSION VERSION : 0.2.7
+-------------------------------------------------------------------------------
+count time : 2024-10-24 10:06:11
+count workspace : /home/karthik/Projects/Grievance-Portal/client
+total files : 50
+total code lines : 6292
+total comment lines : 46
+total blank lines : 238
+
+    statistics
+   |      extension|     total code|  total comment|    total blank|percent|
+   -------------------------------------------------------------------------
+   |            .ts|             93|              2|              9|    1.5|
+   |          .json|           4244|              2|             47|     67|
+   |               |             19|              9|              2|   0.30|
+   |           .cjs|             14|              0|              0|   0.22|
+   |            .md|             10|              0|              1|   0.16|
+   |          .html|             14|              0|              0|   0.22|
+   |            .js|             16|              1|              0|   0.25|
+   |           .tsx|           1569|             31|            176|     25|
+   |           .svg|            302|              1|              1|    4.8|
+   |           .css|             11|              0|              2|   0.17|
+   -------------------------------------------------------------------------
+.eslintrc.cjs, code is 14, comment is 0, blank is 0.
+.gitignore, code is 18, comment is 9, blank is 2.
+.nojekyll, code is 0, comment is 0, blank is 0.
+index.html, code is 14, comment is 0, blank is 0.
+package-lock.json, code is 4165, comment is 0, blank is 45.
+package.json, code is 40, comment is 0, blank is 0.
+postcss.config.js, code is 6, comment is 0, blank is 0.
+public/CNAME, code is 1, comment is 0, blank is 0.
+public/logo.svg, code is 295, comment is 1, blank is 1.
+src/App.tsx, code is 57, comment is 0, blank is 5.
+src/assets/close.svg, code is 3, comment is 0, blank is 0.
+src/assets/dropdown.svg, code is 1, comment is 0, blank is 0.
+src/assets/error404.png, it is a binary file.
+src/assets/index.ts, code is 6, comment is 0, blank is 2.
+src/assets/menu.svg, code is 3, comment is 0, blank is 0.
+src/assets/user.png, it is a binary file.
+src/components/AdminNavbar.tsx, code is 46, comment is 0, blank is 9.
+src/components/index.ts, code is 10, comment is 0, blank is 1.
+src/components/LoadingSpinner.tsx, code is 6, comment is 0, blank is 4.
+src/components/Navbar.tsx, code is 61, comment is 0, blank is 11.
+src/components/TagsAutocomplete.tsx, code is 30, comment is 1, blank is 5.
+src/components/UserIcon.tsx, code is 31, comment is 0, blank is 5.
+src/constants/index.ts, code is 15, comment is 0, blank is 3.
+src/context.tsx, code is 44, comment is 0, blank is 7.
+src/index.css, code is 11, comment is 0, blank is 2.
+src/main.tsx, code is 12, comment is 0, blank is 1.
+src/MainSite.tsx, code is 49, comment is 0, blank is 6.
+src/pages/AddFaculty.tsx, code is 91, comment is 9, blank is 11.
+src/pages/AnonymousComplaint.tsx, code is 88, comment is 3, blank is 10.
+src/pages/ChangePassword.tsx, code is 100, comment is 2, blank is 10.
+src/pages/FirstLoad.tsx, code is 11, comment is 0, blank is 3.
+src/pages/ForgetPassword.tsx, code is 145, comment is 4, blank is 13.
+src/pages/Grievances.tsx, code is 199, comment is 0, blank is 15.
+src/pages/index.ts, code is 30, comment is 0, blank is 1.
+src/pages/Login.tsx, code is 114, comment is 4, blank is 12.
+src/pages/NonExistant.tsx, code is 11, comment is 0, blank is 2.
+src/pages/OngoingGrievances.tsx, code is 98, comment is 1, blank is 8.
+src/pages/Profile.tsx, code is 77, comment is 0, blank is 8.
+src/pages/Register.tsx, code is 146, comment is 2, blank is 10.
+src/pages/RemoveUsers.tsx, code is 70, comment is 2, blank is 10.
+src/pages/ServerError.tsx, code is 10, comment is 0, blank is 3.
+src/pages/SubmitGrievance.tsx, code is 73, comment is 3, blank is 8.
+src/utils/getAccessToken.ts, code is 24, comment is 0, blank is 1.
+src/vite-env.d.ts, code is 0, comment is 1, blank is 0.
+tailwind.config.js, code is 10, comment is 1, blank is 0.
+TODO.md, code is 10, comment is 0, blank is 1.
+tsconfig.json, code is 21, comment is 2, blank is 2.
+tsconfig.node.json, code is 10, comment is 0, blank is 0.
+vercel.json, code is 8, comment is 0, blank is 0.
+vite.config.ts, code is 8, comment is 1, blank is 1.
+===============================================================================
