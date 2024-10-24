@@ -69,6 +69,7 @@ mongoose
   .then(() => {
     console.clear();
     console.log(`Connected to MongoDB `);
+    app.listen(process.env.PORT);
   })
   .then(() =>
     redisClient.on("error", (err) => console.log("Redis Client", err))

@@ -94,7 +94,7 @@ const Register = () => {
       handleReset();
       return;
     }
-    setYear(Number(email.match(emailRegex)![2]));
+    setYear(Number(parseInt(regNo.slice(0, 2))));
     setIsDataValid(true);
   }
 
