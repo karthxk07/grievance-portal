@@ -14,7 +14,7 @@ export default function LoadingOverlay({
       {children}
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50 flex items-center justify-center backdrop-blur-sm">
+      <div className="fixed inset-0 bg-black/50 flex items-center justify-center backdrop-blur-sm">
         {/* Loading spinner container */}
         <div className="bg-white p-4 rounded-lg shadow-lg flex flex-col items-center gap-3">
           {/* Spinner animation */}

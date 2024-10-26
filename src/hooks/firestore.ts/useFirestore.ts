@@ -85,5 +85,18 @@ export const useFirestore = (collectionName: string) => {
     }
   };
 
-  return { add, update, remove, getByField, loading, error };
+  const getAll = async () => {
+    try {
+      const querySnapshot = await getDocs(collection(db, collectionName));
+      return querySnapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+    } catch (error) {
+      console.error("Error fetching documents:", error);
+      throw error;
+    }
+  };
+
+  return { add, update, remove, getByField, getAll, loading, error };
 };

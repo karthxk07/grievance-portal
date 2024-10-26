@@ -21,11 +21,11 @@ export default function LoginPage() {
     try {
       await signIn(email, password);
 
-      setLoading(false);
-
       // Set authentication cookie
       document.cookie = "auth=true; path=/;";
       router.push("/");
+
+      setLoading(false);
     } catch (err: any) {
       setLoading(false);
       setError(err.message);
