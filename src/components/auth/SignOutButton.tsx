@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { auth } from "@/lib/firebase/config";
 import { signOut } from "firebase/auth";
-import LoadingOverlay from "../LoadingOverlay";
 
 export default function SignOutButton() {
   const [isLoading, setIsLoading] = useState(false);
