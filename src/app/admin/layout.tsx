@@ -1,6 +1,5 @@
-// app/dashboard/layout.tsx
-
-import Sidebar from "@/components/dashboard/Sidebar"; // Adjust the import path as necessary
+// app/dashboard/layout.tsx // Adjust the import path as necessary
+import Sidebar from "@/components/admin/SideBar";
 import { ReactNode } from "react";
 
 interface DashboardLayoutProps {

@@ -52,23 +52,36 @@ export default function ShowGrievancePage() {
         ) : (
           grievances?.map((grievance: Grievance, idx) => (
             <div
-              className="p-6 max-w-lg mx-auto bg-white rounded-lg shadow-md mt-6"
+              className="p-6 max-w-full mx-20 flex flex-row justify-between bg-white rounded-lg shadow-md mt-6"
               key={idx}
             >
-              <h1 className="text-2xl font-semibold mb-4">
-                {grievance?.title}
-              </h1>
-              <p className="mb-2 text-gray-600">Status: {grievance?.status}</p>
-              <p className="mb-4">{grievance?.description}</p>
-              <p className="text-sm text-gray-500">
-                Created on:{" "}
-                {new Date(grievance?.createdAt || 0).toLocaleDateString()}
-              </p>
-              <p className="text-sm text-gray-500">
-                {grievance?.isAnonymous
-                  ? "Anonymous"
-                  : `Submitted by: ${grievance?.createdByName}`}
-              </p>
+              <div className="flex flex-col">
+                <h1 className="text-2xl text-black font-semibold mb-4">
+                  {grievance?.title}
+                </h1>
+                <p className="mb-2 text-gray-800">
+                  <span className="text-primaryMaroon">Status: </span>
+                  {grievance?.status.toUpperCase()}
+                </p>
+                {grievance?.adminMessage && (
+                  <p className="mb-2 text-gray-800">
+                    <span className="text-darkBlue">Admin Message: </span>
+                    {grievance?.adminMessage}
+                  </p>
+                )}
+                <p className="mb-4 text-stone-700">{grievance?.description}</p>
+              </div>
+              <div className="flex flex-col text-right">
+                <p className="text-sm text-gray-500">
+                  Created on:{" "}
+                  {new Date(grievance?.createdAt || 0).toLocaleDateString()}
+                </p>
+                <p className="text-sm text-gray-500">
+                  {grievance?.isAnonymous
+                    ? "Anonymous"
+                    : `Submitted by: ${grievance?.createdByName}`}
+                </p>
+              </div>
             </div>
           ))
         )}
