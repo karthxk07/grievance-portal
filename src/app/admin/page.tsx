@@ -5,7 +5,6 @@ import { useFirestore } from "@/hooks/firestore/useFirestore";
 import { Grievance } from "@/types/grievance";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "@/lib/firebase/config";
-import { useRouter } from "next/router";
 import SignOutButton from "@/components/auth/SignOutButton";
 
 export default function AdminPortal() {

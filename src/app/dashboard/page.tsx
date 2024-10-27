@@ -36,7 +36,7 @@ export default function ShowGrievancePage() {
     };
 
     fetchGrievance();
-  }, [auth.user]);
+  }, [auth.user, grievanceFirestore]);
 
   return (
     <>

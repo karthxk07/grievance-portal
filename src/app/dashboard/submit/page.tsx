@@ -30,7 +30,7 @@ export default function SubmitGrievancePage() {
 
   useEffect(() => {
     setLoading(false);
-  });
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

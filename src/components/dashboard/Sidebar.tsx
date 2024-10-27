@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FileText, Send, Shield } from "lucide-react";
+import { FileText, Send } from "lucide-react";
 import SignOutButton from "../auth/SignOutButton";
 
 export default function Sidebar() {

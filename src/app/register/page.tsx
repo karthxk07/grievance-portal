@@ -3,9 +3,9 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useAuth } from "@/hooks/auth/useAuth";
-import { db } from "@/lib/firebase/config";
-import { doc, setDoc } from "firebase/firestore";
 import LoadingOverlay from "@/components/LoadingOverlay";
+import { doc, setDoc } from "firebase/firestore";
+import { db } from "@/lib/firebase/config";
 
 export default function RegisterPage() {
   const [email, setEmail] = useState("");
@@ -48,6 +48,13 @@ export default function RegisterPage() {
       const userCredentials = await signUp(email, password);
 
       // Create user profile in Firestore
+      await setDoc(doc(db, "users", userCredentials.uid), {
+        name,
+        regno,
+        createdAt: new Date().toISOString,
+        email,
+        isAdmin: false, // Set default role; adjust as needed
+      });
 
       router.push("/dashboard");
 

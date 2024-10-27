@@ -21,9 +21,9 @@ export default function ProfilePage() {
         .then((data) => {
           console.log(data);
         })
-        .catch((err) => setError("Failed to load profile"));
+        .catch(() => setError("Failed to load profile"));
     }
-  }, [user, loading]);
+  }, [user, userFirestore, loading]);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>{error}</p>;
