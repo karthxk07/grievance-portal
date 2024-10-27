@@ -53,7 +53,7 @@ export default function RegisterPage() {
       await setDoc(doc(db, "users", userCredentials.uid), {
         name,
         regno,
-        createdAt: new Date().toISOString,
+        createdAt: new Date().toISOString(),
         email,
         isAdmin: false, // Set default role; adjust as needed
       });
