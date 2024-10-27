@@ -62,7 +62,9 @@ export default function RegisterPage() {
     <LoadingOverlay isLoading={loading}>
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
         <div className="max-w-md w-full space-y-8 p-8 bg-white rounded-lg shadow">
-          <h2 className="text-3xl font-bold text-center">Create Account</h2>
+          <h2 className="text-3xl font-bold text-center text-black">
+            Create Account
+          </h2>
           {error && (
             <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
               {error}
@@ -72,7 +74,7 @@ export default function RegisterPage() {
             <div>
               <label
                 htmlFor="name"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-base font-medium text-stone-500"
               >
                 Full Name
               </label>
@@ -82,13 +84,13 @@ export default function RegisterPage() {
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm"
+                className="mt-1 block w-full rounded-md text-black border-gray-300 shadow-sm outline-none py-2 px-2"
               />
             </div>
             <div>
               <label
                 htmlFor="regno"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-base font-medium text-stone-500"
               >
                 Regn No.
               </label>
@@ -98,13 +100,13 @@ export default function RegisterPage() {
                 required
                 value={regno}
                 onChange={(e) => setRegno(e.target.value)}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm"
+                className="mt-1 block w-full rounded-md text-black border-gray-300 shadow-sm outline-none py-2 px-2"
               />
             </div>
             <div>
               <label
                 htmlFor="email"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-base font-medium text-stone-500"
               >
                 Email
               </label>
@@ -114,13 +116,13 @@ export default function RegisterPage() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm"
+                className="mt-1 block w-full rounded-md text-black border-gray-300 shadow-sm outline-none py-2 px-2"
               />
             </div>
             <div>
               <label
                 htmlFor="password"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-base font-medium text-stone-500"
               >
                 Password
               </label>
@@ -130,13 +132,13 @@ export default function RegisterPage() {
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm"
+                className="mt-1 block w-full rounded-md text-black border-gray-300 shadow-sm outline-none py-2 px-2"
               />
             </div>
             <div>
               <label
                 htmlFor="confirmPassword"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-base font-medium text-stone-500"
               >
                 Confirm Password
               </label>
@@ -146,7 +148,7 @@ export default function RegisterPage() {
                 required
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm"
+                className="mt-1 block w-full rounded-md text-black border-gray-300 shadow-sm outline-none py-2 px-2"
               />
             </div>
             <button

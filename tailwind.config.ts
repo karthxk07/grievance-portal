@@ -9,8 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primaryMaroon: "#800000",
+        darkBlue: "#000080",
+        lightBlue: "#4682B4",
+        goldAccent: "#FFD700",
+        white: "#FFFFFF", // if you want to reference it as a custom color
       },
     },
   },
