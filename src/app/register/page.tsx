@@ -6,6 +6,8 @@ import { useAuth } from "@/hooks/auth/useAuth";
 import LoadingOverlay from "@/components/LoadingOverlay";
 import { doc, setDoc } from "firebase/firestore";
 import { db } from "@/lib/firebase/config";
+import Image from "next/image";
+import logo from "../../../public/logo.png";
 
 export default function RegisterPage() {
   const [email, setEmail] = useState("");
@@ -67,6 +69,9 @@ export default function RegisterPage() {
 
   return (
     <LoadingOverlay isLoading={loading}>
+      <div className="absolute top-0 left-0 m-5">
+        <Image src={logo.src} alt="Logo" width={40} height={50} />
+      </div>
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
         <div className="max-w-md w-full space-y-8 p-8 bg-white rounded-lg shadow">
           <h2 className="text-3xl font-bold text-center text-black">

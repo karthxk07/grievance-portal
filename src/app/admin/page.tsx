@@ -101,7 +101,7 @@ export default function AdminPortal() {
             </p>
             <p className="text-gray-500 mb-2">
               <span className="font-semibold">Submitted By:</span>{" "}
-              {grievance.isAnonymous ? "Anonymous" : grievance.createdBy}
+              {grievance.isAnonymous ? "Anonymous" : grievance.createdByName}
             </p>
 
             <div className="mt-4">

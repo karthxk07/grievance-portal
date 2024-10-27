@@ -19,7 +19,7 @@ export default function ShowGrievancePage() {
       if (!auth.user) return;
       try {
         const result = await grievanceFirestore.getByField(
-          "createdBy",
+          "createdById",
           auth.user?.uid
         );
         if (result.length > 0) {
@@ -36,7 +36,7 @@ export default function ShowGrievancePage() {
     };
 
     fetchGrievance();
-  }, [auth.user, grievanceFirestore]);
+  }, [auth.user]);
 
   return (
     <>
@@ -67,7 +67,7 @@ export default function ShowGrievancePage() {
               <p className="text-sm text-gray-500">
                 {grievance?.isAnonymous
                   ? "Anonymous"
-                  : `Submitted by: ${grievance?.createdBy}`}
+                  : `Submitted by: ${grievance?.createdByName}`}
               </p>
             </div>
           ))

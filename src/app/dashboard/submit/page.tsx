@@ -20,17 +20,27 @@ const departments = [
 export default function SubmitGrievancePage() {
   const { user } = useAuth();
   const grievanceFirestore = useFirestore("grievance");
-
+  const usersFirestore = useFirestore("users");
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
+  const [username, setUsername] = useState("");
   const [department, setDepartment] = useState(departments[0]); // Default to the first department
   const [isAnonymous, setIsAnonymous] = useState(false);
   const [loading, setLoading] = useState(true);
   const [message, setMessage] = useState<string | null>(null);
 
   useEffect(() => {
-    setLoading(false);
-  }, []);
+    setLoading(true);
+    if (!user) return;
+    usersFirestore
+      .getById(user?.uid)
+      .then((user) => {
+        setUsername(user?.name);
+      })
+      .then(() => {
+        setLoading(false);
+      });
+  }, [user]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -44,7 +54,8 @@ export default function SubmitGrievancePage() {
         department,
         status: "pending",
         createdAt: Date.now(),
-        createdBy: isAnonymous ? "Anonymous" : user?.uid || "Unknown",
+        createdById: isAnonymous ? "Anonymous" : user?.uid || "Unknown",
+        createdByName: isAnonymous ? "Anonymous" : username || "Unknown",
         isAnonymous,
       });
 

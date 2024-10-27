@@ -5,7 +5,8 @@ export interface Grievance {
   description: string;
   status: "pending" | "in-progress" | "resolved" | "rejected";
   createdAt: number;
-  createdBy: string;
+  createdById: string;
+  createdByName: string;
   isAnonymous?: boolean;
   adminMessage: string;
   department: string;
