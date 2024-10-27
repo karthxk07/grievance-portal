@@ -21,11 +21,9 @@ export const useAuth = () => {
     return unsubscribe;
   }, []);
 
-  const isAdmin = async () => {
-    if (!user) return;
-    const userDocRef = doc(db, "users", user.uid);
+  const checkAdmin = async (uid: string) => {
+    const userDocRef = doc(db, "users", uid);
     const userDoc = await getDoc(userDocRef);
-    console.log(userDoc.data());
     return userDoc.exists() && userDoc.data()?.isAdmin === true;
   };
 
@@ -36,6 +34,13 @@ export const useAuth = () => {
         email,
         password
       );
+
+      // Set cookies
+      document.cookie = "auth=true; path=/";
+      await checkAdmin(userCredential.user.uid).then((isAdmin) => {
+        if (isAdmin) document.cookie = "isAdmin=true;path=/";
+      });
+      console.log(this);
       return userCredential.user;
     } catch (error) {
       throw error;
@@ -56,6 +61,12 @@ export const useAuth = () => {
         isAdmin: false, // Set default role; adjust as needed
       });
 
+      // Set cookies
+      document.cookie = "auth=true; path=/";
+      await checkAdmin(userCredential.user.uid).then((isAdmin) => {
+        if (isAdmin) document.cookie = "isAdmin=true;path=/";
+      });
+
       return userCredential.user;
     } catch (error) {
       throw error;
@@ -70,5 +81,5 @@ export const useAuth = () => {
     }
   };
 
-  return { user, loading, isAdmin, signIn, signUp, logOut };
+  return { user, loading, signIn, signUp, logOut };
 };

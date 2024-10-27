@@ -8,6 +8,7 @@ import {
   query,
   where,
   getDocs,
+  getDoc,
 } from "firebase/firestore";
 import { db } from "@/lib/firebase/config";
 
@@ -85,6 +86,21 @@ export const useFirestore = (collectionName: string) => {
     }
   };
 
+  const getById = async (value: any) => {
+    setLoading(true);
+    setError(null);
+    try {
+      const querySnapshot = await getDoc(doc(db, collectionName, value));
+      const documents = querySnapshot.data();
+      setLoading(false);
+      return documents;
+    } catch (err: any) {
+      setError(err.message);
+      setLoading(false);
+      throw err;
+    }
+  };
+
   const getAll = async () => {
     try {
       const querySnapshot = await getDocs(collection(db, collectionName));
@@ -98,5 +114,5 @@ export const useFirestore = (collectionName: string) => {
     }
   };
 
-  return { add, update, remove, getByField, getAll, loading, error };
+  return { add, update, remove, getByField, getById, getAll, loading, error };
 };

@@ -48,16 +48,8 @@ export default function RegisterPage() {
       const userCredentials = await signUp(email, password);
 
       // Create user profile in Firestore
-      await setDoc(doc(db, "users", userCredentials.uid), {
-        email,
-        name,
-        regno,
-        createdAt: new Date().toISOString(),
-      });
 
-      // Set authentication cookie
-      document.cookie = "auth=true; path=/;";
-      router.push("/");
+      router.push("/dashboard");
 
       setLoading(false);
     } catch (err: any) {

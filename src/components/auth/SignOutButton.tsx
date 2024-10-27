@@ -15,6 +15,8 @@ export default function SignOutButton() {
       await signOut(auth);
       // Remove auth cookie
       document.cookie = "auth=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+      document.cookie =
+        "isAdmin=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT;";
       router.push("/login");
     } catch (error) {
       console.error("Sign out error:", error);

@@ -11,7 +11,7 @@ export default function LoginPage() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const router = useRouter();
-  const { signIn } = useAuth();
+  const auth = useAuth();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -19,11 +19,8 @@ export default function LoginPage() {
     setError("");
 
     try {
-      await signIn(email, password);
-
-      // Set authentication cookie
-      document.cookie = "auth=true; path=/;";
-      router.push("/");
+      await auth.signIn(email, password);
+      router.push("/dashboard");
 
       setLoading(false);
     } catch (err: any) {

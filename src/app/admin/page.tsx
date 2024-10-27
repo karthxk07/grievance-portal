@@ -1,7 +1,7 @@
 // app/admin-portal/page.tsx
 "use client";
 import { useEffect, useState } from "react";
-import { useFirestore } from "@/hooks/firestore.ts/useFirestore";
+import { useFirestore } from "@/hooks/firestore/useFirestore";
 import { Grievance } from "@/types/grievance";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "@/lib/firebase/config";

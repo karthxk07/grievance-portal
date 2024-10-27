@@ -2,7 +2,7 @@
 "use client"; // app/submit-grievance/page.tsx
 
 import { useEffect, useState } from "react";
-import { useFirestore } from "@/hooks/firestore.ts/useFirestore";
+import { useFirestore } from "@/hooks/firestore/useFirestore";
 import { useAuth } from "@/hooks/auth/useAuth";
 import LoadingOverlay from "@/components/LoadingOverlay";
 
