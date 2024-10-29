@@ -40,7 +40,6 @@ export const useAuth = () => {
       await checkAdmin(userCredential.user.uid).then((isAdmin) => {
         if (isAdmin) document.cookie = "isAdmin=true;path=/";
       });
-      console.log(this);
       return userCredential.user;
     } catch (error) {
       throw error;
@@ -81,5 +80,5 @@ export const useAuth = () => {
     }
   };
 
-  return { user, loading, signIn, signUp, logOut };
+  return { user, loading, signIn, signUp, checkAdmin, logOut };
 };

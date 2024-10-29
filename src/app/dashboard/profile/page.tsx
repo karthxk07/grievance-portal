@@ -14,13 +14,10 @@ export default function ProfilePage() {
   useEffect(() => {
     if (user && !loading) {
       // Fetch user profile from Firestore
-      console.log(user.uid);
+
       userFirestore
         .getById(user.uid)
         .then((data) => setProfile(data as unknown as UserProfile))
-        .then((data) => {
-          console.log(data);
-        })
         .catch(() => setError("Failed to load profile"));
     }
   }, [user, userFirestore, loading]);

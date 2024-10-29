@@ -21,8 +21,11 @@ export default function LoginPage() {
     setError("");
 
     try {
-      await auth.signIn(email, password);
-      router.push("/dashboard");
+      const user = await auth.signIn(email, password);
+
+      auth.checkAdmin(user.uid).then((isAdmin) => {
+        return isAdmin ? router.push("/admin") : router.push("/dashboard");
+      });
 
       setLoading(false);
     } catch (err: any) {
