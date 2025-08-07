@@ -8,13 +8,15 @@ import LoadingOverlay from "@/components/LoadingOverlay";
 
 // List of available departments
 const departments = [
-  "Human Resources",
-  "Finance",
-  "IT Support",
-  "Administration",
-  "Engineering",
-  "Sales",
-  "Marketing",
+"Hr", 
+"finance", 
+"BA", 
+"marketing",
+"academics", 
+"hostel", 
+"registrars office", 
+"directors office",
+"others"
 ];
 
 export default function SubmitGrievancePage() {
